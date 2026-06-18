@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Collaborate — The SLPA Playbook</title>
+  <meta name="description" content="Get in touch, suggest a blog topic, flag incorrect information, or pitch a guest post or collaboration." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        The SLPA Playbook
+        <span>a resource built for SLPAs, by SLPAs</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="freebies.html">Freebies</a></li>
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="freebies.html" class="nav__cta">Get Free Guide</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <span class="section-label">let's connect</span>
+        <h1>Contact &amp; Collaborate</h1>
+        <hr class="ruled-divider" />
+        <p style="color:var(--warm-gray);font-size:1.05rem;max-width:540px;">Questions, corrections, guest post pitches, or just want to say hi — this is the place.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container" style="max-width:820px;">
+
+      <!-- GENERAL CONTACT -->
+      <div class="form-section reveal">
+        <h3>General Contact</h3>
+        <p class="form-desc">Questions about the site, products, or anything else. I read every message.</p>
+        <form action="#" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-msg">Message</label>
+            <textarea id="contact-msg" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- SUGGEST A TOPIC -->
+      <div class="form-section reveal">
+        <h3>Suggest a Blog Topic</h3>
+        <p class="form-desc">Is there something you've been Googling with no good results? Tell me what to write next.</p>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="topic-email">Your Email (optional)</label>
+            <input type="email" id="topic-email" name="email" placeholder="your@email.com — only if you want a heads up when it's published" />
+          </div>
+          <div class="form-group">
+            <label for="topic-setting">Your Setting (optional)</label>
+            <select id="topic-setting" name="setting">
+              <option value="">Select a setting</option>
+              <option>School</option>
+              <option>Private Practice</option>
+              <option>Home Health</option>
+              <option>Early Intervention</option>
+              <option>Hospital / Medical</option>
+              <option>Multiple settings</option>
+              <option>Not currently working</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="topic-idea">Topic Idea</label>
+            <textarea id="topic-idea" name="topic" rows="4" placeholder="What do you wish someone had explained to you? What have you been Googling with no good answers?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--periwinkle">Submit Topic Idea</button>
+        </form>
+      </div>
+
+      <!-- FLAG INCORRECT INFO -->
+      <div class="form-section reveal">
+        <h3>Flag Incorrect Information</h3>
+        <p class="form-desc">Scope of practice and licensing rules change. If something on this site is outdated or incorrect — especially for your state — please let me know. I'll update it as quickly as possible.</p>
+        <form action="#" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="flag-email">Your Email</label>
+              <input type="email" id="flag-email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="flag-state">Your State</label>
+              <input type="text" id="flag-state" name="state" placeholder="e.g. Texas" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="flag-page">Page or Post with the Error</label>
+            <input type="text" id="flag-page" name="page" placeholder="e.g. 'Feeding and Swallowing by State' post" />
+          </div>
+          <div class="form-group">
+            <label for="flag-detail">What's incorrect and what's the correct information?</label>
+            <textarea id="flag-detail" name="detail" rows="5" placeholder="Be as specific as possible. If you have a source (state board link, ASHA guideline, etc.) please include it." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--outline">Submit Correction</button>
+        </form>
+      </div>
+
+      <!-- COLLABORATE -->
+      <div class="form-section reveal">
+        <h3>Collaborate</h3>
+        <p class="form-desc">This site is open to guest posts, SLPA interviews, and brand partnerships that are genuinely useful to SLPAs. Read the guidelines below before reaching out.</p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem;">
+          <div class="start-card" style="padding:1.25rem;">
+            <h4 style="margin-bottom:0.4rem;">Guest Posts</h4>
+            <p style="font-size:0.85rem;color:var(--warm-gray);">Written by SLPAs, for SLPAs. Must be original, experience-based, and peer-voiced. No promotional content.</p>
+          </div>
+          <div class="start-card start-card--blue" style="padding:1.25rem;">
+            <h4 style="margin-bottom:0.4rem;">SLPA Interviews</h4>
+            <p style="font-size:0.85rem;color:var(--warm-gray);">Share your experience in a specific setting, specialty, or career path. Short Q&amp;A format. A great way to contribute without writing a full post.</p>
+          </div>
+          <div class="start-card start-card--olive" style="padding:1.25rem;">
+            <h4 style="margin-bottom:0.4rem;">Brand Partnerships</h4>
+            <p style="font-size:0.85rem;color:var(--warm-gray);">Only products I'd genuinely recommend to SLPAs. Therapy materials, organizational tools, and professional resources only.</p>
+          </div>
+        </div>
+
+        <form action="#" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="collab-name">Name</label>
+              <input type="text" id="collab-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="collab-email">Email</label>
+              <input type="email" id="collab-email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="collab-type">Type of Collaboration</label>
+            <select id="collab-type" name="type" required>
+              <option value="">Select one</option>
+              <option>Guest Post</option>
+              <option>SLPA Interview</option>
+              <option>Brand Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="collab-pitch">Your Pitch</label>
+            <textarea id="collab-pitch" name="pitch" rows="5" placeholder="Tell me who you are, what you're proposing, and why it's a good fit for SLPAs specifically." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Pitch</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">The SLPA Playbook</div>
+          <div class="footer__tagline">a resource built for SLPAs, by SLPAs</div>
+          <p class="footer__brand-desc">Real-world resources for speech-language pathology assistants who are building a career, not just waiting for a stepping stone.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social" aria-label="Pinterest">📌</a>
+            <a href="#" class="footer__social" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div>
+          <span class="footer__col-title">Navigate</span>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="freebies.html">Freebies</a></li>
+            <li><a href="start-here.html">Start Here</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer__col-title">Shop</span>
+          <ul class="footer__links">
+            <li><a href="freebies.html">Free Resources</a></li>
+            <li><a href="shop.html">Templates &amp; Systems</a></li>
+            <li><a href="shop.html">Therapy Materials</a></li>
+            <li><a href="shop.html">Career Tools</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="footer__col-title">Legal</span>
+          <ul class="footer__links">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="affiliate.html">Affiliate Disclosure</a></li>
+            <li><a href="copyright.html">Copyright &amp; Usage</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__legal-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="affiliate.html">Affiliate Disclosure</a></li>
+          <li><a href="copyright.html">Copyright &amp; Usage</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p class="footer__disclaimer">This site reflects personal professional experience and peer perspective. It is not clinical guidance. Always consult your supervising SLP and your state licensing board for scope of practice questions.</p>
+        <p class="footer__copy">© 2025 The SLPA Playbook. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
